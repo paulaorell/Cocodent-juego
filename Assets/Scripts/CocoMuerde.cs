@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CocoMuerde : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Velocidad de movimiento del cocodrilo
-    private float minY, maxY; // Límites de la pantalla
-    private Animator animator; // Referencia al Animator
+    public float moveSpeed = 5f;          // Velocidad de movimiento del cocodrilo
+    private float minY, maxY;            // Límites de la pantalla
+    private Animator animator;           // Referencia al Animator
+
+    public BarraSaludDental healthManager; // Referencia al script DentalHealthManager
 
     void Start()
     {
@@ -44,6 +46,12 @@ public class CocoMuerde : MonoBehaviour
         {
             animator.SetTrigger("Eat"); // Activa la animación de comer
             Destroy(other.gameObject); // Destruye la comida
+
+            // Incrementa el contador de alimentos en el DentalHealthManager
+            if (healthManager != null)
+            {
+                healthManager.IncrementFoodCount();
+            }
         }
     }
 }
