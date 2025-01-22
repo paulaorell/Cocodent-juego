@@ -4,53 +4,50 @@ using UnityEngine;
 
 public class CocoMuerde : MonoBehaviour
 {
-    public float moveSpeed = 5f;          // Velocidad de movimiento del cocodrilo
-    private float minY, maxY;            // Límites de la pantalla
-    private Animator animator;           // Referencia al Animator
+    public float moveSpeed = 5f;
+    private float minY, maxY;
+    private Animator animator;
 
-    public BarraSaludDental healthManager; // Referencia al script DentalHealthManager
+    public BarraSaludDental healthManager; // Referencia al DentalHealthManager
 
     void Start()
     {
-        animator = GetComponent<Animator>(); // Obtiene el Animator del cocodrilo
+        animator = GetComponent<Animator>();
 
-        // Obtener los límites de la pantalla
         Camera cam = Camera.main;
         float screenHeight = cam.orthographicSize;
-        minY = -screenHeight + 1f; // Ajusta según el tamaño del sprite
-        maxY = screenHeight - 1f;  // Ajusta según el tamaño del sprite
+        minY = -screenHeight + 1f;
+        maxY = screenHeight - 1f;
     }
 
     void Update()
     {
-        // Movimiento con teclas de flecha ARRIBA (↑) y ABAJO (↓)
         float verticalMovement = 0f;
 
-        if (Input.GetKey(KeyCode.UpArrow)) // Flecha arriba
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             verticalMovement = moveSpeed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.DownArrow)) // Flecha abajo
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
             verticalMovement = -moveSpeed * Time.deltaTime;
         }
 
-        // Aplicar movimiento con límites
         float newY = Mathf.Clamp(transform.position.y + verticalMovement, minY, maxY);
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Food")) // Si choca con la comida
+        if (other.CompareTag("Food") || other.CompareTag("Candy")) 
         {
-            animator.SetTrigger("Eat"); // Activa la animación de comer
-            Destroy(other.gameObject); // Destruye la comida
+            animator.SetTrigger("Eat");
+            Destroy(other.gameObject);
 
-            // Incrementa el contador de alimentos en el DentalHealthManager
             if (healthManager != null)
             {
-                healthManager.IncrementFoodCount();
+                string foodType = other.CompareTag("Candy") ? "Candy" : "Healthy";
+                healthManager.ProcessFood(foodType);
             }
         }
     }

@@ -1,12 +1,13 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BarraSaludDental : MonoBehaviour
 {
     public Slider dentalHealthSlider; // Referencia al Slider (barra de salud dental)
-    public int maxFoodCount = 10;    // Máximo número de alimentos antes de vaciar la barra
+    public int maxCandyCount = 10; // Número máximo de golosinas antes de vaciar la barra
 
-    private int foodCount = 0;       // Contador de alimentos consumidos
+    private int candyCount = 0; // Contador de golosinas consumidas
 
     void Start()
     {
@@ -17,23 +18,27 @@ public class BarraSaludDental : MonoBehaviour
         }
     }
 
-    // Método público para incrementar el contador de alimentos
-    public void IncrementFoodCount()
+    // Método público para procesar comida
+    public void ProcessFood(string foodType)
     {
-        foodCount++;
-
-        // Calcula el nuevo valor del slider
-        if (dentalHealthSlider != null)
+        if (foodType == "Candy") // Si es una golosina, disminuye la barra
         {
-            float newValue = Mathf.Clamp01(0.5f - ((float)foodCount / maxFoodCount) * 0.5f); // Reduce proporcionalmente
-            dentalHealthSlider.value = newValue;
+            candyCount++;
+
+            if (dentalHealthSlider != null)
+            {
+                float newValue = Mathf.Clamp01(0.5f - ((float)candyCount / maxCandyCount) * 0.5f);
+                dentalHealthSlider.value = newValue;
+            }
+
+            if (candyCount >= maxCandyCount)
+            {
+                Debug.Log("¡Salud dental vacía!");
+            }
         }
-
-        // Comprobar si la barra está vacía
-        if (foodCount >= maxFoodCount)
+        else if (foodType == "Healthy") // Si es comida saludable, la barra se mantiene
         {
-            Debug.Log("¡Salud dental vacía!");
-            // Aquí puedes realizar acciones, como mostrar un mensaje o finalizar el juego.
+            Debug.Log("Comida saludable, la barra no cambia.");
         }
     }
 }
