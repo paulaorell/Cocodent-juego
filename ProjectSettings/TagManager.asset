@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Food
   - Candy
+  - Activator
   layers:
   - Default
   - TransparentFX
