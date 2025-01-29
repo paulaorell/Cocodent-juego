@@ -19,9 +19,9 @@ public class BeatScroller : MonoBehaviour
     {
         if(!hasStarted)
         {
-            if(Input.anyKeyDown){
+           /* if(Input.anyKeyDown){
                 hasStarted = true;
-            }
+            }*/
         } else
         //los circulos van a bajar 2 cuadritos por segundo
         {

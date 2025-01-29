@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//script para desaparecer las notas cuando entren en el colisionador
 public class NoteObject : MonoBehaviour
 {
     public bool canBePressed;
@@ -20,6 +21,7 @@ public class NoteObject : MonoBehaviour
             if(canBePressed)
             {
                 gameObject.SetActive(false);
+                GameManager.instance.NoteHit();
             }
         }
     }
@@ -36,6 +38,8 @@ public class NoteObject : MonoBehaviour
         if (other.tag == "Activator")
         {
             canBePressed = false;
+
+            GameManager.instance.NoteMissed();
         }
     }
 }
