@@ -8,6 +8,8 @@ TagManager:
   - Candy
   - Activator
   - Flecha
+  - Cepillo
+  - Music
   layers:
   - Default
   - TransparentFX

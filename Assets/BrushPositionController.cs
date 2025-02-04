@@ -1,29 +1,40 @@
+using System.Collections;
 using UnityEngine;
 
-public class BrushPositionController : MonoBehaviour
+public class BrushController : MonoBehaviour
 {
-    public Animator animator; // Animator que controla la rotaciÛn
-    public Transform[] positions; // Las diferentes posiciones a las que se mover· el cepillo
-    public float[] moveTimes; // Los tiempos despuÈs de los cuales se mover· el cepillo
-    private int currentPositionIndex = 0; // Indice de la posiciÛn actual
-    private float elapsedTime = 0f; // Contador de tiempo
+    public Animator animator;  // El Animator del cepillo
+    public Transform[] positions;  // Posiciones a las que se mover√°
+    public float[] moveTimes;  // Tiempos de espera antes de moverse
+    public float moveSpeed = 2f; // Velocidad de movimiento
 
-    void Update()
+    private int index = 0; // √çndice de posici√≥n
+
+    void Start()
     {
-        // Acumulamos el tiempo
-        elapsedTime += Time.deltaTime;
+        StartCoroutine(MoveBrush());
+    }
 
-        // Comprobamos si se ha alcanzado uno de los tiempos para mover el cepillo
-        if (currentPositionIndex < moveTimes.Length && elapsedTime >= moveTimes[currentPositionIndex])
+    IEnumerator MoveBrush()
+    {
+        while (true)
         {
-            // Mover el cepillo a la nueva posiciÛn
-            transform.position = positions[currentPositionIndex].position;
+            yield return new WaitForSeconds(moveTimes[index]); // Espera el tiempo definido
+            
+            animator.SetTrigger("MoveToPosition"); // Activa la animaci√≥n de rotaci√≥n
+            
+            Vector3 startPos = transform.position;
+            Vector3 targetPos = positions[index].position;
+            float t = 0;
 
-            // Activar la animaciÛn de movimiento (si existe en el Animator)
-            animator.SetTrigger("MoveBrush");
+            while (t < 1)
+            {
+                t += Time.deltaTime * moveSpeed;
+                transform.position = Vector3.Lerp(startPos, targetPos, t);
+                yield return null;
+            }
 
-            // Avanzar a la siguiente posiciÛn
-            currentPositionIndex++;
+            index = (index + 1) % positions.Length; // Pasa a la siguiente posici√≥n
         }
     }
 }
