@@ -161,7 +161,7 @@ MonoBehaviour:
   perfectThreshold: 0.3
   goodThreshold: 0.5
   acceptableThreshold: 1
-  flechasPorSeccion: 01000000010000000100000001000000
+  flechasPorSeccion: 02000000020000000100000001000000
 --- !u!4 &29454761
 Transform:
   m_ObjectHideFlags: 0
@@ -6032,7 +6032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1421616494968709722, guid: a63bf6082da93564b89e8dba9b358e11, type: 3}
       propertyPath: seccion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1421616494968709722, guid: a63bf6082da93564b89e8dba9b358e11, type: 3}
       propertyPath: rhythmGameController
@@ -6141,7 +6141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8503633797732834168, guid: 1d737e2f6bbaad54b93dfc0a2896a9a4, type: 3}
       propertyPath: seccion
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8503633797732834168, guid: 1d737e2f6bbaad54b93dfc0a2896a9a4, type: 3}
       propertyPath: rhythmGameController
@@ -6223,7 +6223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3924246252812470248, guid: ec947029849565b488642e2e8645df66, type: 3}
       propertyPath: seccion
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3924246252812470248, guid: ec947029849565b488642e2e8645df66, type: 3}
       propertyPath: rhythmGameController
