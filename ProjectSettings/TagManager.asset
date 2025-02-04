@@ -45,7 +45,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: COCO
+  - name: OCOO
     uniqueID: 3159336221
     locked: 0
   - name: flechas
