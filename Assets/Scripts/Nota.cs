@@ -7,26 +7,19 @@ public class Nota : MonoBehaviour
     public int seccion; // Sección a la que pertenece la flecha (0 a 5)
 
     public RhythmGameController rhythmGameController; // Referencia al RhythmGameController
+    private Collider2D activatorCollider; // Guarda el collider del botón activador cuando la flecha entra
 
     private void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress) && canBePressed)
         {
-            if (canBePressed)
+            if (activatorCollider != null)
             {
-                // Calcular la diferencia de posición entre la flecha y el lugar donde se presionó la tecla
-                Vector3 flechaPos = transform.position; // Posición de la flecha
-                Vector3 pressPos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Posición de la tecla presionada (convertida de pantalla a mundo)
+                // Obtener la posición de la flecha
+                Vector3 flechaPos = transform.position;
 
-                // Eliminar la componente Z para trabajar solo en 2D
-                flechaPos.z = 0;
-                pressPos.z = 0;
-
-                // Calcular la distancia entre la flecha y la posición de la tecla presionada
-                float distancia = Vector3.Distance(flechaPos, pressPos);
-
-                // Llamar al controlador de ritmo para registrar el acierto basado en la distancia
-                rhythmGameController.RegisterHit(seccion, distancia);
+                // Llamar al controlador de ritmo con la posición de la flecha
+                rhythmGameController.RegisterHit(seccion, flechaPos.y);
 
                 // Desactivar la flecha
                 gameObject.SetActive(false);
@@ -36,19 +29,19 @@ public class Nota : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Verificar si la flecha entra en el área del botón
         if (other.CompareTag("Activator"))
         {
             canBePressed = true;
+            activatorCollider = other; // Guardar el activador en el que entró la flecha
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // Verificar si la flecha sale del área del botón
         if (other.CompareTag("Activator"))
         {
             canBePressed = false;
+            activatorCollider = null; // Eliminar referencia al activador
         }
     }
 }

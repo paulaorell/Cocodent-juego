@@ -8,7 +8,6 @@ public class ControladorBoton : MonoBehaviour
     public Sprite pressedImage;
 
     public KeyCode keyToPress;
-
     public RhythmGameController rhythmGameController; // Referencia al RhythmGameController
 
     private List<GameObject> flechasEnZona = new List<GameObject>(); // Lista de flechas en la zona del botón
@@ -20,7 +19,7 @@ public class ControladorBoton : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress)) // Cambia la imagen cuando la tecla se aplasta
+        if (Input.GetKeyDown(keyToPress)) // Cambia la imagen cuando la tecla se presiona
         {
             theSR.sprite = pressedImage;
 
@@ -30,24 +29,16 @@ public class ControladorBoton : MonoBehaviour
                 // Tomar la primera flecha de la lista
                 GameObject flecha = flechasEnZona[0];
 
-                // Obtener el script de la flecha para calcular la diferencia de posición
+                // Obtener el script de la flecha
                 Nota flechaScript = flecha.GetComponent<Nota>();
 
                 if (flechaScript != null)
                 {
                     int seccion = flechaScript.seccion;
-                    Vector3 flechaPos = flecha.transform.position; // Posición de la flecha
-                    Vector3 pressPos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Posición de la tecla presionada
+                    Transform flechaTransform = flecha.transform; // Usamos el transform completo de la flecha
 
-                    // Eliminar la componente Z para trabajar solo en 2D
-                    flechaPos.z = 0;
-                    pressPos.z = 0;
-
-                    // Calcular la distancia entre la flecha y la posición de la tecla presionada
-                    float distancia = Vector3.Distance(flechaPos, pressPos);
-
-                    // Llamar al RhythmGameController con la distancia
-                    rhythmGameController.RegisterHit(seccion, distancia);
+                    // Llamar a RhythmGameController con la sección y la posición de la flecha
+                    rhythmGameController.RegisterHit(seccion, flechaTransform.position.y);
 
                     // Eliminar la flecha de la lista y destruirla
                     flechasEnZona.RemoveAt(0);

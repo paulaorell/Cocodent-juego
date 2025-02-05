@@ -3,66 +3,111 @@ using UnityEngine.UI;
 
 public class RhythmGameController : MonoBehaviour
 {
-    // Array para las secciones de mugre que se van a hacer invisibles.
-    public Image[] mugreSections;
+    public GameObject[] mugreSections;
+    public Slider scoreSlider;
 
-    // Umbrales de precisión editables desde el Inspector.
-    [Header("Umbrales de precisión")]
-    public float perfectThreshold = 0.93f; // Margen para un perfecto (más fácil para lograr un perfecto).
-    public float goodThreshold = 0.95f;    // Margen para un buen acierto.
-    public float acceptableThreshold = 0.98f; // Margen para un acierto aceptable.
+    [Header("Parámetros de precisión")]
+    public float perfectMin = -4.1f;
+    public float perfectMax = -3.3f;
+    public float goodMin = -3.29f;
+    public float goodMax = -2.68f;
+    public float normalMin = -2.68f;
+    public float normalMax = -2.16f;
 
-    // Número de flechas por cada sección de mugre.
+    public float perfectMultiplier = 1f;
+    public float goodMultiplier = 0.75f;
+    public float normalMultiplier = 0.5f;
+
+    [Header("Configuración de secciones")]
     public int[] flechasPorSeccion;
 
-    // Opacidad de cada sección de mugre.
+    [Header("Configuración de Puntaje")]
+    public int totalFlechas = 100; // Puedes cambiar esto en el editor
+    private float puntajePorFlecha;
+
     private float[] opacidadMugre;
+    private SpriteRenderer[] mugreRenderers;
+    private float score = 0f;
 
     void Start()
     {
-        // Inicializamos la opacidad de las mugres al máximo (1)
         opacidadMugre = new float[mugreSections.Length];
+        mugreRenderers = new SpriteRenderer[mugreSections.Length];
+
         for (int i = 0; i < mugreSections.Length; i++)
         {
-            opacidadMugre[i] = 1f; // 100% visible
+            mugreRenderers[i] = mugreSections[i].GetComponent<SpriteRenderer>();
+            opacidadMugre[i] = 1f;
+        }
+
+        // Calculamos cuánto vale cada flecha en la barra de puntaje
+        puntajePorFlecha = 100f / totalFlechas;
+
+        if (scoreSlider != null)
+        {
+            scoreSlider.minValue = 0;
+            scoreSlider.maxValue = 100;
+            scoreSlider.value = 0;
         }
     }
 
-    // Método para registrar un acierto.
-    public void RegisterHit(int seccion, float timingDifference)
+    public void RegisterHit(int seccion, float posicionFlecha)
     {
-        // Calcular el porcentaje de acierto según la diferencia de tiempo.
-        float porcentajeAcierto = CalculateAccuracy(timingDifference);
+        float precision = CalculateHitPrecision(posicionFlecha);
+        int totalFlechasSeccion = flechasPorSeccion[seccion];
+        float reduccionBase = 1f / totalFlechasSeccion;
+        float reduccionOpacidad = 0f;
+        float puntajeSumar = 0f;
+        string hitType = "Miss";
 
-        // Reducir la opacidad de la mugre según el porcentaje de acierto.
-        float porcentajePorFlecha = 1f / Mathf.Max(flechasPorSeccion[seccion], 1); // Acierto por flecha.
-        opacidadMugre[seccion] -= porcentajePorFlecha * porcentajeAcierto * 5f; // Aumento la reducción
+        if (precision == 1f)
+        {
+            reduccionOpacidad = reduccionBase * perfectMultiplier;
+            puntajeSumar = puntajePorFlecha * 1f;
+            hitType = "Perfect Hit!";
+        }
+        else if (precision == 0.75f)
+        {
+            reduccionOpacidad = reduccionBase * goodMultiplier;
+            puntajeSumar = puntajePorFlecha * 0.75f;
+            hitType = "Good Hit!";
+        }
+        else if (precision == 0.5f)
+        {
+            reduccionOpacidad = reduccionBase * normalMultiplier;
+            puntajeSumar = puntajePorFlecha * 0.5f;
+            hitType = "Normal Hit!";
+        }
 
-        // Asegurarse de que la opacidad no sea menor que 0.
+        opacidadMugre[seccion] -= reduccionOpacidad;
         opacidadMugre[seccion] = Mathf.Max(opacidadMugre[seccion], 0f);
 
-        // Actualizar la visualización de la mugre.
-        mugreSections[seccion].color = new Color(1f, 1f, 1f, opacidadMugre[seccion]);
+        mugreRenderers[seccion].color = new Color(mugreRenderers[seccion].color.r, mugreRenderers[seccion].color.g, mugreRenderers[seccion].color.b, opacidadMugre[seccion]);
+
+        score += puntajeSumar;
+
+        if (scoreSlider != null)
+        {
+            scoreSlider.value = score;
+        }
+
+        Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
     }
 
-    // Método para calcular el porcentaje de acierto según la diferencia de tiempo.
-    private float CalculateAccuracy(float timingDifference)
+    private float CalculateHitPrecision(float posicionFlecha)
     {
-        if (timingDifference <= perfectThreshold)
+        if (posicionFlecha >= perfectMin && posicionFlecha <= perfectMax)
         {
-            return 1f; // Perfecto (100%)
+            return 1f;
         }
-        else if (timingDifference <= goodThreshold)
+        else if (posicionFlecha >= goodMin && posicionFlecha <= goodMax)
         {
-            return 0.75f; // Bueno (75%)
+            return 0.75f;
         }
-        else if (timingDifference <= acceptableThreshold)
+        else if (posicionFlecha >= normalMin && posicionFlecha <= normalMax)
         {
-            return 0.5f; // Aceptable (50%)
+            return 0.5f;
         }
-        else
-        {
-            return 0.25f; // Regular (25%)
-        }
+        return 0f;
     }
 }
