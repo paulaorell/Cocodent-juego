@@ -14,7 +14,7 @@ public class BarraSaludDental : MonoBehaviour
         // Inicializa el slider en la mitad
         if (dentalHealthSlider != null) //si la variable no tiene un valor asignado entonces...
         {
-            dentalHealthSlider.value = 500f; // ...El handle comienza en la mitad
+            dentalHealthSlider.value = 0.5f; // ...El handle comienza en la mitad
         }
     }
 
