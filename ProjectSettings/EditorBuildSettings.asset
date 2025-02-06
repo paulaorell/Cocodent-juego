@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Escenas Cocodent/CocoRita.unity
+    path: Assets/Escenas Cocodent/CocoCome.unity
     guid: 1336a1c9a600c0d4ea645252df149318
   - enabled: 1
     path: Assets/Escenas Cocodent/Cococepilla.unity
@@ -17,10 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel1.unity
     guid: 8802e0c5ae80c4c42806efb32cadf7d3
-  - enabled: 1
-    path: Assets/Scenes/Nivel2.unity
-    guid: 5147396129a74684280d41cee4c89571
-  - enabled: 1
-    path: Assets/Scenes/Nivel3.unity
-    guid: 1dfdd37ad2189ad468d955844298a86c
   m_configObjects: {}
