@@ -1,152 +1,176 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using TMPro;
 
 public class RhythmGameController : MonoBehaviour
 {
-    public GameObject[] mugreSections;
-    public Slider scoreSlider;
-    public GameObject[] dientesSprites; // Los sprites de los dientes en la escena de "Gano"
-    public TextMeshProUGUI experienciaTexto;
-    public TextMeshProUGUI monedasTexto;
+    public GameObject[] mugreSections;
+    public Slider scoreSlider;
 
-    [Header("Parámetros de precisión")]
-    public float perfectMin = -4.1f;
-    public float perfectMax = -3.3f;
-    public float goodMin = -3.29f;
-    public float goodMax = -2.68f;
-    public float normalMin = -2.68f;
-    public float normalMax = -2.16f;
+    [Header("Parámetros de precisión")]
+    public float perfectMin = -4.1f;
+    public float perfectMax = -3.3f;
+    public float goodMin = -3.29f;
+    public float goodMax = -2.68f;
+    public float normalMin = -2.68f;
+    public float normalMax = -2.16f;
 
-    public float perfectMultiplier = 1f;
-    public float goodMultiplier = 0.75f;
-    public float normalMultiplier = 0.5f;
+    public float perfectMultiplier = 1f;
+    public float goodMultiplier = 0.75f;
+    public float normalMultiplier = 0.5f;
 
-    [Header("Configuración de secciones")]
-    public int[] flechasPorSeccion;
+    [Header("Configuración de secciones")]
+    public int[] flechasPorSeccion;
 
-    [Header("Configuración de Puntaje")]
-    public int totalFlechas = 4;
-    private float puntajePorFlecha;
-    private float valorComida;
-    private float[] opacidadMugre;
-    private SpriteRenderer[] mugreRenderers;
-    private float score = 0f;
-    private int flechasRegistradas = 0; // Contador de flechas registradas
+    [Header("Configuración de Puntaje")]
+    public int totalFlechas = 4;
+    private float puntajePorFlecha;
+    private float valorComida;
 
-    private GameMCandys gameMCandys;
+    private float[] opacidadMugre;
+    private SpriteRenderer[] mugreRenderers;
+    private float score = 0f;
+    private int flechasRegistradas = 0; // Contador de flechas registradas
 
-    void Start()
-    {
-        gameMCandys = GameMCandys.Instance;
+    private GameMCandys gameMCandys;
 
-        if (gameMCandys == null)
-        {
-            Debug.LogError("GameMCandys.Instance no está inicializado.");
-        }
+    void Start()
+    {
+        gameMCandys = GameMCandys.Instance;
 
-        opacidadMugre = new float[mugreSections.Length];
-        mugreRenderers = new SpriteRenderer[mugreSections.Length];
+        if (gameMCandys == null)
+        {
+            Debug.LogError("GameMCandys.Instance no está inicializado. Asegúrate de que el objeto existe en la escena.");
+        }
+        else
+        {
+            Debug.Log("GameMCandys.Instance cargado correctamente.");
+        }
 
-        for (int i = 0; i < mugreSections.Length; i++)
-        {
-            mugreRenderers[i] = mugreSections[i].GetComponent<SpriteRenderer>();
-            opacidadMugre[i] = 1f;
-        }
+        opacidadMugre = new float[mugreSections.Length];
+        mugreRenderers = new SpriteRenderer[mugreSections.Length];
 
-        puntajePorFlecha = 100f / totalFlechas;
-        valorComida = 2f / puntajePorFlecha;
+        for (int i = 0; i < mugreSections.Length; i++)
+        {
+            mugreRenderers[i] = mugreSections[i].GetComponent<SpriteRenderer>();
+            opacidadMugre[i] = 1f;
+        }
 
-        if (scoreSlider != null)
-        {
-            scoreSlider.minValue = 0;
-            scoreSlider.maxValue = 100;
-            scoreSlider.value = 0;
-        }
-    }
+        puntajePorFlecha = 100f / totalFlechas;
+        valorComida = 2f / puntajePorFlecha;
 
-    public void RegisterHit(int seccion, float posicionFlecha)
-    {
-        flechasRegistradas++;
-        float precision = CalculateHitPrecision(posicionFlecha);
-        float puntajeSumar = puntajePorFlecha * precision;
+        if (scoreSlider != null)
+        {
+            scoreSlider.minValue = 0;
+            scoreSlider.maxValue = 100;
+            scoreSlider.value = 0;
+        }
 
-        score += puntajeSumar;
-        scoreSlider.value = score;
+        flechasRegistradas = 0; // Inicializamos el contador de flechas
+    }
 
-        Debug.Log($"Puntaje total: {score}");
+    public void RegisterHit(int seccion, float posicionFlecha)
+    {
+        float precision = CalculateHitPrecision(posicionFlecha);
+        int totalFlechasSeccion = flechasPorSeccion[seccion];
+        float reduccionBase = 1f / totalFlechasSeccion;
+        float reduccionOpacidad = 0f;
+        float puntajeSumar = 0f;
+        string hitType = "Miss";
 
-        if (flechasRegistradas >= totalFlechas)
-        {
-            CalcularPuntajeFinal();
-        }
-    }
+        if (precision == 1f)
+        {
+            reduccionOpacidad = reduccionBase * perfectMultiplier;
+            puntajeSumar = puntajePorFlecha * 1f;
+            hitType = "Perfect Hit!";
+        }
+        else if (precision == 0.75f)
+        {
+            reduccionOpacidad = reduccionBase * goodMultiplier;
+            puntajeSumar = puntajePorFlecha * 0.75f;
+            hitType = "Good Hit!";
+        }
+        else if (precision == 0.5f)
+        {
+            reduccionOpacidad = reduccionBase * normalMultiplier;
+            puntajeSumar = puntajePorFlecha * 0.5f;
+            hitType = "Normal Hit!";
+        }
 
-    public void CalcularPuntajeFinal()
-    {
-        Debug.Log("Calculando puntaje final...");
-        int comidas = gameMCandys.foodCount;
-        int dulces = gameMCandys.candyCount;
+        opacidadMugre[seccion] -= reduccionOpacidad;
+        opacidadMugre[seccion] = Mathf.Max(opacidadMugre[seccion], 0f);
 
-        score += comidas * valorComida;
-        score -= dulces * valorComida;
-        score = Mathf.Max(0, score);
+        mugreRenderers[seccion].color = new Color(mugreRenderers[seccion].color.r, mugreRenderers[seccion].color.g, mugreRenderers[seccion].color.b, opacidadMugre[seccion]);
 
-        scoreSlider.value = score;
-        Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+        score += puntajeSumar;
 
-        DeterminarResultados();
-    }
+        if (scoreSlider != null)
+        {
+            scoreSlider.value = score;
+        }
 
-    private void DeterminarResultados()
-    {
-        int experienciaGanada = 0;
-        int monedasGanadas = 0;
+        Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
 
-        if (score >= 20 && score <= 40)
-        {
-            experienciaGanada = 200;
-            monedasGanadas = 25;
-            dientesSprites[0].SetActive(true);
-        }
-        else if (score >= 41 && score <= 84)
-        {
-            experienciaGanada = 300;
-            monedasGanadas = 50;
-            dientesSprites[0].SetActive(true);
-            dientesSprites[1].SetActive(true);
-        }
-        else if (score >= 85 && score <= 100)
-        {
-            experienciaGanada = 400;
-            monedasGanadas = 100;
-            dientesSprites[0].SetActive(true);
-            dientesSprites[1].SetActive(true);
-            dientesSprites[2].SetActive(true);
-        }
-        else
-        {
-            SceneManager.LoadScene("Perdio");
-            return;
-        }
+        // Contar flecha registrada
+        flechasRegistradas++;
 
-        ExpGameManager.Instance.AgregarRecompensas(experienciaGanada, monedasGanadas);
+        // Si se han registrado todas las flechas, calcular el puntaje final
+        if (flechasRegistradas >= totalFlechas)
+        {
+            Debug.Log("Se han registrado todas las flechas. Calculando puntaje final...");
+            CalcularPuntajeFinal();
+        }
+    }
 
-        experienciaTexto.text = $"Experiencia: {experienciaGanada}";
-        monedasTexto.text = $"Monedas: {monedasGanadas}";
+    public void CalcularPuntajeFinal()
+    {
+        Debug.Log("Entrando en CalcularPuntajeFinal()");
 
-        SceneManager.LoadScene("Gano");
-    }
+        if (gameMCandys == null)
+        {
+            Debug.LogError("GameMCandys.Instance sigue siendo nulo en CalcularPuntajeFinal. Verifica su inicialización.");
+            return;
+        }
 
-    private float CalculateHitPrecision(float posicionFlecha)
-    {
-        if (posicionFlecha >= perfectMin && posicionFlecha <= perfectMax)
-            return 1f;
-        if (posicionFlecha >= goodMin && posicionFlecha <= goodMax)
-            return 0.75f;
-        if (posicionFlecha >= normalMin && posicionFlecha <= normalMax)
-            return 0.5f;
-        return 0f;
-    }
+        Debug.Log("Calculando puntaje final...");
+        int comidas = gameMCandys.foodCount;
+        int dulces = gameMCandys.candyCount;
+
+        float puntajeComida = comidas * valorComida;
+        float puntajeDulce = dulces * valorComida;
+
+        Debug.Log($"PUNTAJE ANTES DEL AJUSTE: {score}");
+        Debug.Log($"Comidas consumidas: {comidas}, Valor agregado: +{puntajeComida}");
+        Debug.Log($"Dulces consumidos: {dulces}, Valor restado: -{puntajeDulce}");
+
+        score += puntajeComida;
+        score -= puntajeDulce;
+        score = Mathf.Max(0, score);
+
+        if (scoreSlider != null)
+        {
+            scoreSlider.value = score;
+        }
+
+        Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+    }
+
+    private float CalculateHitPrecision(float posicionFlecha)
+    {
+        Debug.Log("Entrando en hitprecision");
+
+        if (posicionFlecha >= perfectMin && posicionFlecha <= perfectMax)
+        {
+            return 1f;
+        }
+        else if (posicionFlecha >= goodMin && posicionFlecha <= goodMax)
+        {
+            return 0.75f;
+        }
+        else if (posicionFlecha >= normalMin && posicionFlecha <= normalMax)
+        {
+            return 0.5f;
+        }
+        return 0f;
+    }
 }
+
