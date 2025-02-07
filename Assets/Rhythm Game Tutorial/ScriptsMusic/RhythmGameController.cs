@@ -6,7 +6,7 @@ public class RhythmGameController : MonoBehaviour
     public GameObject[] mugreSections;
     public Slider scoreSlider;
 
-    [Header("Parámetros de precisión")]
+    [Header("Parï¿½metros de precisiï¿½n")]
     public float perfectMin = -4.1f;
     public float perfectMax = -3.3f;
     public float goodMin = -3.29f;
@@ -18,11 +18,11 @@ public class RhythmGameController : MonoBehaviour
     public float goodMultiplier = 0.75f;
     public float normalMultiplier = 0.5f;
 
-    [Header("Configuración de secciones")]
+    [Header("Configuraciï¿½n de secciones")]
     public int[] flechasPorSeccion;
 
-    [Header("Configuración de Puntaje")]
-    public int totalFlechas = 100; // Puedes cambiar esto en el editor
+    [Header("Configuraciï¿½n de Puntaje")]
+    public int totalFlechas = 4; // Puedes cambiar esto en el editor
     private float puntajePorFlecha;
 
     private float[] opacidadMugre;
@@ -40,7 +40,7 @@ public class RhythmGameController : MonoBehaviour
             opacidadMugre[i] = 1f;
         }
 
-        // Calculamos cuánto vale cada flecha en la barra de puntaje
+        // Calculamos cuï¿½nto vale cada flecha en la barra de puntaje
         puntajePorFlecha = 100f / totalFlechas;
 
         if (scoreSlider != null)
@@ -91,7 +91,7 @@ public class RhythmGameController : MonoBehaviour
             scoreSlider.value = score;
         }
 
-        Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
+        Debug.Log($"{hitType} en la secciï¿½n {seccion}! Reducciï¿½n de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
     }
 
     private float CalculateHitPrecision(float posicionFlecha)
