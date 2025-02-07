@@ -8,7 +8,7 @@ public class CambioEscena : MonoBehaviour
     void Start()
     {
         // Llama al método CambiarEscena después de 50 segundos.
-        Invoke("CambiarEscena", 50f);
+        Invoke("CambiarEscena", 15f);
     }
 
     void CambiarEscena()

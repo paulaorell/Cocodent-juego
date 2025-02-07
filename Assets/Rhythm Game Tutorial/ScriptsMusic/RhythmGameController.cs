@@ -34,7 +34,17 @@ public class RhythmGameController : MonoBehaviour
 
     void Start()
     {
+      
         gameMCandys = GameMCandys.Instance;
+
+        if (gameMCandys == null)
+        {
+            Debug.LogError("GameMCandys.Instance no está inicializado. Asegúrate de que el objeto existe en la escena.");
+        }
+        else
+        {
+            Debug.Log("GameMCandys.Instance cargado correctamente.");
+        }
 
         opacidadMugre = new float[mugreSections.Length];
         mugreRenderers = new SpriteRenderer[mugreSections.Length];
@@ -70,6 +80,7 @@ public class RhythmGameController : MonoBehaviour
             reduccionOpacidad = reduccionBase * perfectMultiplier;
             puntajeSumar = puntajePorFlecha * 1f;
             hitType = "Perfect Hit!";
+          
         }
         else if (precision == 0.75f)
         {
@@ -101,38 +112,39 @@ public class RhythmGameController : MonoBehaviour
 
     public void CalcularPuntajeFinal()
     {
-        if (gameMCandys != null)
+        Debug.Log("Entrando en CalcularPuntajeFinal()");
+        if (gameMCandys == null)
         {
-            Debug.Log("Entrando en calcularpuintajefinal");
-            int comidas = gameMCandys.foodCount;
-            int dulces = gameMCandys.candyCount;
-
-            float puntajeComida = comidas * valorComida;
-            float puntajeDulce = dulces * valorComida;
-
-            Debug.Log($"PUNTAJE ANTES DEL AJUSTE: {score}");
-            Debug.Log($"Comidas consumidas: {comidas}, Valor agregado: +{puntajeComida}");
-            Debug.Log($"Dulces consumidos: {dulces}, Valor restado: -{puntajeDulce}");
-
-            score += puntajeComida;
-            score -= puntajeDulce;
-            score = Mathf.Max(0, score);
-
-            if (scoreSlider != null)
-            {
-                scoreSlider.value = score;
-            }
-
-            Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+            Debug.LogError("GameMCandys.Instance sigue siendo nulo en CalcularPuntajeFinal. Verifica su inicialización.");
+            return;
         }
-        else
+
+        Debug.Log("Entrando en CalcularPuntajeFinal");
+        int comidas = gameMCandys.foodCount;
+        int dulces = gameMCandys.candyCount;
+
+        float puntajeComida = comidas * valorComida;
+        float puntajeDulce = dulces * valorComida;
+
+        Debug.Log($"PUNTAJE ANTES DEL AJUSTE: {score}");
+        Debug.Log($"Comidas consumidas: {comidas}, Valor agregado: +{puntajeComida}");
+        Debug.Log($"Dulces consumidos: {dulces}, Valor restado: -{puntajeDulce}");
+
+        score += puntajeComida;
+        score -= puntajeDulce;
+        score = Mathf.Max(0, score);
+
+        if (scoreSlider != null)
         {
-            Debug.LogWarning("No se encontró GameMCandys.");
+            scoreSlider.value = score;
         }
+
+        Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
     }
 
     private float CalculateHitPrecision(float posicionFlecha)
     {
+        Debug.Log("entro en hitprecision");
         if (posicionFlecha >= perfectMin && posicionFlecha <= perfectMax)
         {
             return 1f;
