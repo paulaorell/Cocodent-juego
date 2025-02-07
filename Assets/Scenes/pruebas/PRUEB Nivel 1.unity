@@ -157,7 +157,12 @@ MonoBehaviour:
   - {fileID: 473111681}
   - {fileID: 132489443}
   scoreSlider: {fileID: 1453020552}
-  comidaContador: {fileID: 0}
+  dientesSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  experienciaTexto: {fileID: 0}
+  monedasTexto: {fileID: 0}
   perfectMin: -4.1
   perfectMax: -3.3
   goodMin: -3.29
