@@ -6,7 +6,7 @@ public class RhythmGameController : MonoBehaviour
     public GameObject[] mugreSections;
     public Slider scoreSlider;
 
-    [Header("Par�metros de precisi�n")]
+    [Header("Parámetros de precisión")]
     public float perfectMin = -4.1f;
     public float perfectMax = -3.3f;
     public float goodMin = -3.29f;
@@ -18,19 +18,24 @@ public class RhythmGameController : MonoBehaviour
     public float goodMultiplier = 0.75f;
     public float normalMultiplier = 0.5f;
 
-    [Header("Configuraci�n de secciones")]
+    [Header("Configuración de secciones")]
     public int[] flechasPorSeccion;
 
-    [Header("Configuraci�n de Puntaje")]
-    public int totalFlechas = 4; // Puedes cambiar esto en el editor
+    [Header("Configuración de Puntaje")]
+    public int totalFlechas = 4;
     private float puntajePorFlecha;
+    private float valorComida;
 
     private float[] opacidadMugre;
     private SpriteRenderer[] mugreRenderers;
     private float score = 0f;
 
+    private GameMCandys gameMCandys;
+
     void Start()
     {
+        gameMCandys = GameMCandys.Instance;
+
         opacidadMugre = new float[mugreSections.Length];
         mugreRenderers = new SpriteRenderer[mugreSections.Length];
 
@@ -40,8 +45,8 @@ public class RhythmGameController : MonoBehaviour
             opacidadMugre[i] = 1f;
         }
 
-        // Calculamos cu�nto vale cada flecha en la barra de puntaje
         puntajePorFlecha = 100f / totalFlechas;
+        valorComida = 2f / puntajePorFlecha;
 
         if (scoreSlider != null)
         {
@@ -91,7 +96,39 @@ public class RhythmGameController : MonoBehaviour
             scoreSlider.value = score;
         }
 
-        Debug.Log($"{hitType} en la secci�n {seccion}! Reducci�n de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
+        Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
+    }
+
+    public void CalcularPuntajeFinal()
+    {
+        if (gameMCandys != null)
+        {
+            Debug.Log("Entrando en calcularpuintajefinal");
+            int comidas = gameMCandys.foodCount;
+            int dulces = gameMCandys.candyCount;
+
+            float puntajeComida = comidas * valorComida;
+            float puntajeDulce = dulces * valorComida;
+
+            Debug.Log($"PUNTAJE ANTES DEL AJUSTE: {score}");
+            Debug.Log($"Comidas consumidas: {comidas}, Valor agregado: +{puntajeComida}");
+            Debug.Log($"Dulces consumidos: {dulces}, Valor restado: -{puntajeDulce}");
+
+            score += puntajeComida;
+            score -= puntajeDulce;
+            score = Mathf.Max(0, score);
+
+            if (scoreSlider != null)
+            {
+                scoreSlider.value = score;
+            }
+
+            Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró GameMCandys.");
+        }
     }
 
     private float CalculateHitPrecision(float posicionFlecha)
