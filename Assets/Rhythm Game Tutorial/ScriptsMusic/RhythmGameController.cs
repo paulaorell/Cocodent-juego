@@ -120,7 +120,10 @@ public class RhythmGameController : MonoBehaviour
             CalcularPuntajeFinal();
         }
     }
-
+    public float ObtenerPuntaje()
+     {
+        return score;
+     }
     public void CalcularPuntajeFinal()
     {
         Debug.Log("Entrando en CalcularPuntajeFinal()");
@@ -152,6 +155,7 @@ public class RhythmGameController : MonoBehaviour
         }
 
         Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+    FindObjectOfType<FinalNivelesEsc>()?.VerificarPuntajeFinal();
     }
 
     private float CalculateHitPrecision(float posicionFlecha)
@@ -173,4 +177,3 @@ public class RhythmGameController : MonoBehaviour
         return 0f;
     }
 }
-
