@@ -16,4 +16,4 @@ public class CambioEscena : MonoBehaviour
         // Cambia a la escena especificada.
         SceneManager.LoadScene(nombreEscena);
     }
-}
+} 
