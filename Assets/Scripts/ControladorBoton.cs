@@ -10,7 +10,7 @@ public class ControladorBoton : MonoBehaviour
     public KeyCode keyToPress;
     public RhythmGameController rhythmGameController; // Referencia al RhythmGameController
 
-    private List<GameObject> flechasEnZona = new List<GameObject>(); // Lista de flechas en la zona del botón
+    private List<GameObject> flechasEnZona = new List<GameObject>(); // Lista de flechas en la zona del botï¿½n
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class ControladorBoton : MonoBehaviour
                     int seccion = flechaScript.seccion;
                     Transform flechaTransform = flecha.transform; // Usamos el transform completo de la flecha
 
-                    // Llamar a RhythmGameController con la sección y la posición de la flecha
+                    // Llamar a RhythmGameController con la secciï¿½n y la posiciï¿½n de la flecha
                     rhythmGameController.RegisterHit(seccion, flechaTransform.position.y);
 
                     // Eliminar la flecha de la lista y destruirla
@@ -53,16 +53,16 @@ public class ControladorBoton : MonoBehaviour
         }
     }
 
-    // Detectar cuando una flecha entra en la zona del botón
+    // Detectar cuando una flecha entra en la zona del botï¿½n
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Flecha")) // Asegúrate de que las flechas tengan el tag "Flecha"
+        if (other.CompareTag("Flecha")) // Asegï¿½rate de que las flechas tengan el tag "Flecha"
         {
             flechasEnZona.Add(other.gameObject);
         }
     }
 
-    // Detectar cuando una flecha sale de la zona del botón
+    // Detectar cuando una flecha sale de la zona del botï¿½n
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Flecha"))

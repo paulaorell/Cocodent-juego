@@ -117,7 +117,7 @@ public class RhythmGameController : MonoBehaviour
         if (flechasRegistradas >= totalFlechas)
         {
             Debug.Log("Se han registrado todas las flechas. Calculando puntaje final...");
-            CalcularPuntajeFinal();
+           // CalcularPuntajeFinal();
         }
     }
     public float ObtenerPuntaje()
@@ -160,7 +160,7 @@ public class RhythmGameController : MonoBehaviour
 
     private float CalculateHitPrecision(float posicionFlecha)
     {
-        Debug.Log("Entrando en hitprecision");
+        
 
         if (posicionFlecha >= perfectMin && posicionFlecha <= perfectMax)
         {
