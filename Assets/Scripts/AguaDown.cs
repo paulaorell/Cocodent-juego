@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TransicionEntrada : MonoBehaviour
+public class AguaDown : MonoBehaviour
 {
     public Animator animacionCanvas; // Referencia al Animator del Canvas.
 

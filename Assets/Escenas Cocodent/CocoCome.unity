@@ -1194,51 +1194,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259985153}
   m_CullTransparentMesh: 1
---- !u!1 &272755322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 272755324}
-  - component: {fileID: 272755325}
-  m_Layer: 0
-  m_Name: ControlEscena
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &272755324
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272755322}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1025.9838, y: 533.5659, z: 1.495025}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &272755325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272755322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 078e7099bf961654db04ef4a97d4ca08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nombreEscena: Nivel1
 --- !u!1 &298021953
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,6 +9136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransicionAgua
       objectReference: {fileID: 0}
+    - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6951325
@@ -9224,8 +9183,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 435362379108639679, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2876073377561224497}
   m_SourcePrefab: {fileID: 100100000, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+--- !u!1 &2876073377561224496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 435362379108639679, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+  m_PrefabInstance: {fileID: 2876073377561224494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2876073377561224497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876073377561224496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078e7099bf961654db04ef4a97d4ca08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: Nivel1
+  canvas: {fileID: 2876073377561224496}
+  delayBeforeTransition: 15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -9245,5 +9227,4 @@ SceneRoots:
   - {fileID: 753794966}
   - {fileID: 1741729540}
   - {fileID: 1066582655}
-  - {fileID: 272755324}
   - {fileID: 2876073377561224494}
