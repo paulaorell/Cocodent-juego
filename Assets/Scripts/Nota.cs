@@ -8,6 +8,7 @@ public class Nota : MonoBehaviour
 
     public RhythmGameController rhythmGameController; // Referencia al RhythmGameController
     private Collider2D activatorCollider; // Guarda el collider del bot�n activador cuando la flecha entra
+    private bool auxHit = true;
 
     private void Update()
     {
@@ -29,9 +30,10 @@ public class Nota : MonoBehaviour
             }
         }
 
-    if (transform.position.y <=-5)
+    if (transform.position.y <=-5 && auxHit)
         {
             rhythmGameController.RegisterHit(seccion, transform.position.y);
+            auxHit=false;
         }
 
 

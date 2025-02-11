@@ -18215,7 +18215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023166293}
   m_Layer: 0
-  m_Name: Transition
+  m_Name: TransitionBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38867,5 +38867,5 @@ SceneRoots:
   - {fileID: 312456486}
   - {fileID: 1406492749}
   - {fileID: 1023166293}
-  - {fileID: 1075065787}
   - {fileID: 157025342}
+  - {fileID: 1075065787}

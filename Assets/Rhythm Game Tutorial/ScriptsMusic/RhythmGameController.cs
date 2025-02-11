@@ -33,6 +33,8 @@ public class RhythmGameController : MonoBehaviour
 
     private GameMCandys gameMCandys;
 
+private bool auxFin = true;
+
     void Start()
     {
         gameMCandys = GameMCandys.Instance;
@@ -114,10 +116,11 @@ public class RhythmGameController : MonoBehaviour
         flechasRegistradas++;
 
         // Si se han registrado todas las flechas, calcular el puntaje final
-        if (flechasRegistradas >= totalFlechas)
+        if (flechasRegistradas >= totalFlechas && auxFin)
         {
             Debug.Log("Se han registrado todas las flechas. Calculando puntaje final...");
-           // CalcularPuntajeFinal();
+           CalcularPuntajeFinal();
+        auxFin=false;
         }
     }
     public float ObtenerPuntaje()

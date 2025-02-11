@@ -1026,6 +1026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreEscena: PRUEB Nivel 1
+  canvas: {fileID: 0}
+  delayBeforeTransition: 5
 --- !u!4 &272755324
 Transform:
   m_ObjectHideFlags: 0

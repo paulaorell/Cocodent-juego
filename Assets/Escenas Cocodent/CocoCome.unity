@@ -9185,7 +9185,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 435362379108639679, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 2876073377561224497}
   m_SourcePrefab: {fileID: 100100000, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
 --- !u!1 &2876073377561224496 stripped
@@ -9207,7 +9207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombreEscena: Nivel1
   canvas: {fileID: 2876073377561224496}
-  delayBeforeTransition: 15
+  delayBeforeTransition: 50
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Gano.unity
     guid: 0d679afdb29d23e4bb6a50189891407d
   - enabled: 1
-    path: Assets/Scenes/Game Over.unity
+    path: Assets/Scenes/GameOver.unity
     guid: e915dd7b88899ee47b87a43ee30abf9e
   m_configObjects: {}
