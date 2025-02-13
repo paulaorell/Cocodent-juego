@@ -19,7 +19,7 @@ public class BrushController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(moveTimes[index]); // Espera el tiempo definido
+            
             
             animator.SetTrigger("MoveToPosition"); // Activa la animación de rotación
             
@@ -35,6 +35,7 @@ public class BrushController : MonoBehaviour
             }
 
             index = (index + 1) % positions.Length; // Pasa a la siguiente posición
+            yield return new WaitForSeconds(moveTimes[index]); // Espera el tiempo definido
         }
     }
 }
