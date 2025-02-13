@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameMCandys : MonoBehaviour
 {
@@ -22,6 +23,28 @@ public class GameMCandys : MonoBehaviour
         {
             Destroy(gameObject); // Evitar duplicados
         }
+
+        // Suscribirse al evento de carga de escenas
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // Se llama cada vez que una nueva escena se carga
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Si la escena cargada es la de "Prue part1_2", reiniciamos los contadores
+        if (scene.name == "Prue part1_2")
+        {
+            foodCount = 0;
+            candyCount = 0;
+            UpdateFoodCounterText();
+            UpdateCandyCounterText();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        // Desuscribirse del evento para evitar problemas al destruir el objeto
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void AddFood()

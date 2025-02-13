@@ -9132,6 +9132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 435362379108639679, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_Name
       value: TransicionAgua

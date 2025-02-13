@@ -288,7 +288,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CocoCome
+          m_StringArgument: Prue part1_2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &83136844
@@ -368,6 +368,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &258551662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258551664}
+  - component: {fileID: 258551663}
+  m_Layer: 0
+  m_Name: MainMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &258551663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258551662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57f7af1c0da81841b417c648e86246b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpText: {fileID: 1826299029}
+  coinsText: {fileID: 1306844566}
+--- !u!4 &258551664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258551662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 944.3287, y: 598.584, z: 5.016715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338292661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,6 +2054,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247428439}
   m_CullTransparentMesh: 1
+--- !u!1001 &1281115690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6632456170946805455, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_Name
+      value: GameDatManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
 --- !u!1001 &1294585661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2117,7 +2220,7 @@ GameObject:
   - component: {fileID: 1306844567}
   - component: {fileID: 1306844566}
   m_Layer: 0
-  m_Name: Monedes
+  m_Name: Texto_Monedas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2162,7 +2265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a0f5ba73b445a645a59bc91ef9f6475, type: 2}
   m_sharedMaterial: {fileID: 2073947580859074956, guid: 4a0f5ba73b445a645a59bc91ef9f6475, type: 2}
@@ -3371,7 +3474,7 @@ GameObject:
   - component: {fileID: 1826299030}
   - component: {fileID: 1826299029}
   m_Layer: 0
-  m_Name: Experiencia
+  m_Name: Textp_XP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3416,7 +3519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 400000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a0f5ba73b445a645a59bc91ef9f6475, type: 2}
   m_sharedMaterial: {fileID: 2073947580859074956, guid: 4a0f5ba73b445a645a59bc91ef9f6475, type: 2}
@@ -4033,3 +4136,5 @@ SceneRoots:
   - {fileID: 1136171237}
   - {fileID: 1294585661}
   - {fileID: 1979646574}
+  - {fileID: 1281115690}
+  - {fileID: 258551664}
