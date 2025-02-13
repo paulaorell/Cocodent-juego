@@ -28,16 +28,20 @@ public class RhythmGameController : MonoBehaviour
 
     private float[] opacidadMugre;
     private SpriteRenderer[] mugreRenderers;
-    private float score = 0f;
+    public float score = 0f;
     private int flechasRegistradas = 0; // Contador de flechas registradas
 
     private GameMCandys gameMCandys;
+    private GameDataManager gameDataManager;
 
-private bool auxFin = true;
+
+    private bool auxFin = true;
 
     void Start()
     {
-        gameMCandys = GameMCandys.Instance;
+        // Inicializa GameDataManager
+        gameDataManager = GameDataManager.Instance;
+        gameMCandys = GameMCandys.Instance;
 
         if (gameMCandys == null)
         {
@@ -152,12 +156,17 @@ private bool auxFin = true;
         score -= puntajeDulce;
         score = Mathf.Max(0, score);
 
+        // Aquí agregas la llamada para guardar el puntaje en GameDataManager
+        gameDataManager.UpdateScore((int)score);  // Asegúrate de enviar el puntaje como un entero
+
         if (scoreSlider != null)
         {
             scoreSlider.value = score;
         }
 
-        Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
+      
+
+        Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
     FindObjectOfType<FinalNivelesEsc>()?.VerificarPuntajeFinal();
     }
 
