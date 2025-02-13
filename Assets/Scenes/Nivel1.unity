@@ -2024,6 +2024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransicionAgua
       objectReference: {fileID: 0}
+    - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6951325
@@ -18220,7 +18224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1023166293
 Transform:
   m_ObjectHideFlags: 0
