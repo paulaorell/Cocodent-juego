@@ -26,6 +26,7 @@ public class GameMCandys : MonoBehaviour
 
         // Suscribirse al evento de carga de escenas
         SceneManager.sceneLoaded += OnSceneLoaded;
+        
     }
 
     // Se llama cada vez que una nueva escena se carga
@@ -38,7 +39,9 @@ public class GameMCandys : MonoBehaviour
             candyCount = 0;
             UpdateFoodCounterText();
             UpdateCandyCounterText();
+            
         }
+       
     }
 
     private void OnDestroy()

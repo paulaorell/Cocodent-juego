@@ -39,6 +39,7 @@ public class CocoMuerde : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+         print("holaCoco");
         if (other.CompareTag("Food") || other.CompareTag("Candy")) 
         {
             animator.SetTrigger("Eat");

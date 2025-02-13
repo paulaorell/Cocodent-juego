@@ -1223,6 +1223,7 @@ PrefabInstance:
     - {fileID: 1088205277337749344, guid: 68a3bd81720ad7c4ca369851ffa01789, type: 3}
     - {fileID: 5698923530992702014, guid: 68a3bd81720ad7c4ca369851ffa01789, type: 3}
     - {fileID: 8918842165066768653, guid: 68a3bd81720ad7c4ca369851ffa01789, type: 3}
+    - {fileID: 5607201133254421829, guid: 68a3bd81720ad7c4ca369851ffa01789, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68a3bd81720ad7c4ca369851ffa01789, type: 3}
@@ -1999,7 +2000,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.15862226, y: 0.06798136}
@@ -2543,7 +2544,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.15862226, y: 0.06798136}
@@ -5870,7 +5871,7 @@ GameObject:
   - component: {fileID: 1466686702}
   - component: {fileID: 1466686701}
   - component: {fileID: 1466686706}
-  - component: {fileID: 1466686705}
+  - component: {fileID: 1466686707}
   m_Layer: 3
   m_Name: Rita mordiendo_0
   m_TagString: Player
@@ -6017,20 +6018,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1180003996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1466686705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466686699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728627abccee2694c98d3faeebfbdbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 7
-  healthManager: {fileID: 682358495}
 --- !u!95 &1466686706
 Animator:
   serializedVersion: 5
@@ -6052,6 +6039,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1466686707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466686699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78f8aa490508ef44bc3aaa11f142863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  healthManager: {fileID: 0}
 --- !u!1 &1611381001
 GameObject:
   m_ObjectHideFlags: 0
@@ -6620,7 +6621,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.15862226, y: 0.06798136}
@@ -6786,7 +6787,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.15862226, y: -0.286134}
@@ -7380,63 +7381,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1880509096
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6632456170946805455, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_Name
-      value: GameDatManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6827801603133765416, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
 --- !u!1 &1892273753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8203,7 +8147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8270,9 +8214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078e7099bf961654db04ef4a97d4ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Nivel1
+  nombreEscena: Nivel3
   canvas: {fileID: 2876073377561224496}
-  delayBeforeTransition: 50
+  delayBeforeTransition: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8294,4 +8238,3 @@ SceneRoots:
   - {fileID: 191367405}
   - {fileID: 2876073377561224494}
   - {fileID: 134381012}
-  - {fileID: 1880509096}
