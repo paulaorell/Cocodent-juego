@@ -22,7 +22,7 @@ public class CocoComeCont : MonoBehaviour
         minY = -screenHeight + 1f;
         maxY = screenHeight - 1f;
 
-        // Buscar textos en la escena actual y asignarlos si no están asignados
+        // Buscar textos en la escena actual y asignarlos si no estï¿½n asignados
         if (gameMCandys.foodCounterText == null)
             gameMCandys.foodCounterText = GameObject.Find("FoodCounter")?.GetComponent<TMP_Text>();
 
@@ -52,11 +52,14 @@ public class CocoComeCont : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        print("holaCoco");
         if (other.CompareTag("Food"))
         {
+            
             animator.SetTrigger("Eat");
             Destroy(other.gameObject);
             gameMCandys.AddFood();
+            
 
             if (healthManager != null)
             {
