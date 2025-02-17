@@ -8214,7 +8214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078e7099bf961654db04ef4a97d4ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Nivel1 1
+  nombreEscena: Nivel 1
   canvas: {fileID: 2876073377561224496}
   delayBeforeTransition: 10
 --- !u!1660057539 &9223372036854775807
