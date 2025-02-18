@@ -5873,7 +5873,7 @@ GameObject:
   - component: {fileID: 1466686706}
   - component: {fileID: 1466686707}
   m_Layer: 3
-  m_Name: Rita mordiendo_0
+  m_Name: Milo mordiendo_0
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5942,7 +5942,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.98, y: 6.34}
+    oldSize: {x: 4.9862976, y: 6.34}
     newSize: {x: 4.98, y: 6.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5992,7 +5992,7 @@ SpriteRenderer:
   m_SortingLayerID: -1135631075
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b306447ae033f74799e51011be2505a, type: 3}
+  m_Sprite: {fileID: 137347681, guid: a6c6d218d7a22504199d5579747178ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6028,7 +6028,7 @@ Animator:
   m_GameObject: {fileID: 1466686699}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40aa7130ef11cae488e7bacd53d8c8bf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 572df00060a2ecf4697bccd501c1e117, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8147,7 +8147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
