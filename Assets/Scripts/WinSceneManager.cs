@@ -16,7 +16,9 @@ public class WinSceneManager : MonoBehaviour
             Debug.LogError("GameDataManager no está inicializado.");
             return; // Salir del método si no está inicializado
         }
-
+ }
+        void Update()
+    {
         // Obtener el puntaje desde GameDataManager
         int score = GameDataManager.Instance.lastScore;  // Aquí estamos obteniendo el puntaje que ya ha sido calculado
         int xp = 0;
@@ -41,7 +43,8 @@ public class WinSceneManager : MonoBehaviour
             xp = 400;
             coins = 100;
         }
-
+        Debug.LogError("do ."+score );
+   
         // Mostrar los valores en pantalla
         //scoreText.text = "Puntuación: " + score;
         //xpText.text = "Experiencia: " + xp;

@@ -2041,6 +2041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8796112455827824615, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+      propertyPath: scoreF.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2134,6 +2138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3198913870071381281, guid: 6fb72a6af345ba34c901e6de250ad891, type: 3}
+      propertyPath: gameDataManager
+      value: 
+      objectReference: {fileID: 2141192001}
     - target: {fileID: 8868380542025239513, guid: 6fb72a6af345ba34c901e6de250ad891, type: 3}
       propertyPath: m_Name
       value: ControladorEscenas
@@ -4084,6 +4092,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134898463}
   m_CullTransparentMesh: 1
+--- !u!114 &2141192001 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8796112455827824615, guid: 9fc7802a92b163a40b539c2706a0036c, type: 3}
+  m_PrefabInstance: {fileID: 1281115690}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ce82d0ad1bb124ab27f01792073218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

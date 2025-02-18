@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameDataManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameDataManager : MonoBehaviour
     public int lastScore;
     public int playerXp;
     public int playerCoins;
+    //public List<int> scoreF = new List<int>();
+
 
     // Método Awake() para asegurarse de que solo haya una instancia de GameDataManager
     void Awake()
@@ -27,8 +30,10 @@ public class GameDataManager : MonoBehaviour
     // Método para actualizar el puntaje (llamado al final del juego, cuando se obtiene un nuevo puntaje)
     public void UpdateScore(int score)
     {
+        //scoreF.Add(score);
         lastScore = score;  // Guarda el puntaje del juego actual
         PlayerPrefs.SetInt("LastScore", lastScore);  // Guardar el puntaje para que persista entre sesiones
+        
     }
 
     // Método para agregar experiencia y monedas

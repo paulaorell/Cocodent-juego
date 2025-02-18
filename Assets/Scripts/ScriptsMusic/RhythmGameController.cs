@@ -33,6 +33,7 @@ public class RhythmGameController : MonoBehaviour
 
     private GameMCandys gameMCandys;
     private GameDataManager gameDataManager;
+    public FinalNivelesEsc auxFinNivel;
 
 
     private bool auxFin = true;
@@ -114,11 +115,10 @@ public class RhythmGameController : MonoBehaviour
             scoreSlider.value = score;
         }
 
-        Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
+        //Debug.Log($"{hitType} en la sección {seccion}! Reducción de opacidad: {reduccionOpacidad}, Nueva opacidad: {opacidadMugre[seccion]}, Puntaje ganado: {puntajeSumar}, Puntaje total: {score}");
 
         // Contar flecha registrada
         flechasRegistradas++;
-    print (flechasRegistradas+" "+ totalFlechas);
 
         // Si se han registrado todas las flechas, calcular el puntaje final
         if (flechasRegistradas >= totalFlechas && auxFin)
@@ -168,7 +168,10 @@ public class RhythmGameController : MonoBehaviour
       
 
         Debug.Log($"PUNTAJE FINAL AJUSTADO: {score}");
-    FindObjectOfType<FinalNivelesEsc>()?.VerificarPuntajeFinal();
+
+        auxFinNivel.VerificarPuntajeFinal();
+       // FindObjectOfType<FinalNivelesEsc>()?.VerificarPuntajeFinal();
+
     }
 
     private float CalculateHitPrecision(float posicionFlecha)
