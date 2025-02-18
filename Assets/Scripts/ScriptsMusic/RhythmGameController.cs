@@ -118,6 +118,7 @@ public class RhythmGameController : MonoBehaviour
 
         // Contar flecha registrada
         flechasRegistradas++;
+    print (flechasRegistradas+" "+ totalFlechas);
 
         // Si se han registrado todas las flechas, calcular el puntaje final
         if (flechasRegistradas >= totalFlechas && auxFin)

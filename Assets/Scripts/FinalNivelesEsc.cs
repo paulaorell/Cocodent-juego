@@ -1,9 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class FinalNivelesEsc : MonoBehaviour
 {
     public RhythmGameController rhythmGameController;
+    public Canvas CanvasGano;  // Referencia al Canvas de cuando se gana
+    public Canvas CanvasPerdio; // Referencia al Canvas de cuando se pierde
 
     void Start()
     {
@@ -11,6 +12,10 @@ public class FinalNivelesEsc : MonoBehaviour
         {
             rhythmGameController = FindObjectOfType<RhythmGameController>();
         }
+
+        // Asegúrate de que los Canvas estén desactivados al iniciar
+        if (CanvasGano != null) CanvasGano.gameObject.SetActive(false);
+        if (CanvasPerdio != null) CanvasPerdio.gameObject.SetActive(false);
     }
 
     public void VerificarPuntajeFinal()
@@ -26,11 +31,13 @@ public class FinalNivelesEsc : MonoBehaviour
 
         if (score < 20)
         {
-            SceneManager.LoadScene("GameOver");
+            // Activa el Canvas de "Perdido"
+            if (CanvasPerdio != null) CanvasPerdio.gameObject.SetActive(true);
         }
         else
         {
-            SceneManager.LoadScene("Gano");
+            // Activa el Canvas de "Ganado"
+            if (CanvasGano != null) CanvasGano.gameObject.SetActive(true);
         }
     }
 }
