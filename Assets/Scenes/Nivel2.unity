@@ -258,7 +258,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!95 &4634391 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1801431999587424014, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
@@ -400,7 +400,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &8766536
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &12006212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492481197293729565, guid: baa5539d7e1cf8342b96b14701eb5702, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6728212330887592286, guid: baa5539d7e1cf8342b96b14701eb5702, type: 3}
       propertyPath: animacionCanvas
@@ -905,7 +905,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &31812926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &42637365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &47192308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &65447402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1521,7 +1521,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &70380193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &78171824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &90453805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,7 +1932,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &95578398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &95767990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &96198160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,7 +2375,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &131445254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,7 +2512,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &140328760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,7 +2649,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &147677089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,7 +2786,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &148085385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,7 +2923,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &150962355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3060,7 +3060,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &152233802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,7 +3197,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &161768669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,7 +3334,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &176450716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,7 +3471,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &199822015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3486,7 +3486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3669,7 +3669,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &240041606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,7 +3806,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &277359159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,7 +3943,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &288345428
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,7 +4080,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &289932246
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,7 +4217,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &310940934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,7 +4354,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &314274442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4491,7 +4491,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &323728040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,7 +4628,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &327303893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,7 +4765,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &337743515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &367841026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &369225595
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,7 +5176,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &372917953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,7 +5479,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &377237035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,7 +5782,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &394930694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5919,7 +5919,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &407489233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6056,7 +6056,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &413195108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6193,7 +6193,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &422054438
 GameObject:
   m_ObjectHideFlags: 0
@@ -6330,7 +6330,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &433645171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6467,7 +6467,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &434941595
 GameObject:
   m_ObjectHideFlags: 0
@@ -6604,7 +6604,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &436714585
 GameObject:
   m_ObjectHideFlags: 0
@@ -6741,7 +6741,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &461470708
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,7 +6878,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &463869098
 GameObject:
   m_ObjectHideFlags: 0
@@ -7015,7 +7015,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &466388765
 GameObject:
   m_ObjectHideFlags: 0
@@ -7152,7 +7152,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &470957772
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,7 +7324,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &474726034
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,7 +7461,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &481559768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,7 +7598,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &491134329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7735,7 +7735,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &504692787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7872,7 +7872,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &532763467
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &544965944
 GameObject:
   m_ObjectHideFlags: 0
@@ -8146,7 +8146,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &547127420
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,7 +8283,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &551086479
 GameObject:
   m_ObjectHideFlags: 0
@@ -8420,7 +8420,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &558716231
 GameObject:
   m_ObjectHideFlags: 0
@@ -8557,7 +8557,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &560063846
 GameObject:
   m_ObjectHideFlags: 0
@@ -8694,7 +8694,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &562718573
 GameObject:
   m_ObjectHideFlags: 0
@@ -8831,7 +8831,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &569682612
 GameObject:
   m_ObjectHideFlags: 0
@@ -8968,7 +8968,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &571353396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9105,7 +9105,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &595393816
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,7 +9242,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &623218468
 GameObject:
   m_ObjectHideFlags: 0
@@ -9379,7 +9379,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &648059774
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,7 +9516,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &652449132
 GameObject:
   m_ObjectHideFlags: 0
@@ -9653,7 +9653,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &662833514
 GameObject:
   m_ObjectHideFlags: 0
@@ -9790,7 +9790,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &667032933
 GameObject:
   m_ObjectHideFlags: 0
@@ -9927,7 +9927,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &669528638
 GameObject:
   m_ObjectHideFlags: 0
@@ -10064,7 +10064,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &670061706
 GameObject:
   m_ObjectHideFlags: 0
@@ -10201,7 +10201,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &671219611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10338,7 +10338,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &694866873
 GameObject:
   m_ObjectHideFlags: 0
@@ -10475,7 +10475,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &700581259
 GameObject:
   m_ObjectHideFlags: 0
@@ -10612,7 +10612,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &718767337
 GameObject:
   m_ObjectHideFlags: 0
@@ -10749,7 +10749,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &731361433
 GameObject:
   m_ObjectHideFlags: 0
@@ -10886,7 +10886,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &761549959
 GameObject:
   m_ObjectHideFlags: 0
@@ -11023,7 +11023,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &768037285
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,7 +11160,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &775125280
 GameObject:
   m_ObjectHideFlags: 0
@@ -11297,7 +11297,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &784806058
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,7 +11813,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &794330488
 GameObject:
   m_ObjectHideFlags: 0
@@ -11950,7 +11950,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &794961066
 GameObject:
   m_ObjectHideFlags: 0
@@ -12087,7 +12087,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &800507887
 GameObject:
   m_ObjectHideFlags: 0
@@ -12224,7 +12224,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &801491961
 GameObject:
   m_ObjectHideFlags: 0
@@ -12361,7 +12361,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &808864419
 GameObject:
   m_ObjectHideFlags: 0
@@ -12498,7 +12498,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &815894899
 GameObject:
   m_ObjectHideFlags: 0
@@ -12635,7 +12635,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &835278912
 GameObject:
   m_ObjectHideFlags: 0
@@ -12772,7 +12772,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &839860390
 GameObject:
   m_ObjectHideFlags: 0
@@ -12909,7 +12909,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &852911995
 GameObject:
   m_ObjectHideFlags: 0
@@ -13046,7 +13046,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &853749655
 GameObject:
   m_ObjectHideFlags: 0
@@ -13183,7 +13183,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &855435036
 GameObject:
   m_ObjectHideFlags: 0
@@ -13320,7 +13320,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &865648104
 GameObject:
   m_ObjectHideFlags: 0
@@ -13457,7 +13457,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &867141041
 GameObject:
   m_ObjectHideFlags: 0
@@ -13594,7 +13594,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &883564777
 GameObject:
   m_ObjectHideFlags: 0
@@ -13731,7 +13731,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &883716736
 GameObject:
   m_ObjectHideFlags: 0
@@ -13868,7 +13868,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &886316986
 GameObject:
   m_ObjectHideFlags: 0
@@ -14005,7 +14005,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &896047468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14142,7 +14142,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &901257601
 GameObject:
   m_ObjectHideFlags: 0
@@ -14279,7 +14279,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &902928611
 GameObject:
   m_ObjectHideFlags: 0
@@ -14416,7 +14416,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &910830206
 GameObject:
   m_ObjectHideFlags: 0
@@ -14553,7 +14553,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &917590517
 GameObject:
   m_ObjectHideFlags: 0
@@ -14690,7 +14690,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &921810348
 GameObject:
   m_ObjectHideFlags: 0
@@ -14827,7 +14827,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &922305973
 GameObject:
   m_ObjectHideFlags: 0
@@ -14964,7 +14964,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &923820528
 GameObject:
   m_ObjectHideFlags: 0
@@ -15116,7 +15116,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &930133938
 GameObject:
   m_ObjectHideFlags: 0
@@ -15253,7 +15253,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &963084078
 GameObject:
   m_ObjectHideFlags: 0
@@ -15390,7 +15390,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &967775097
 GameObject:
   m_ObjectHideFlags: 0
@@ -15527,7 +15527,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &978125875
 GameObject:
   m_ObjectHideFlags: 0
@@ -15664,7 +15664,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &984040700
 GameObject:
   m_ObjectHideFlags: 0
@@ -15829,7 +15829,7 @@ MonoBehaviour:
   theSR: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: 38faa0c39aab86f43ba4858232728351, type: 3}
   pressedImage: {fileID: 21300000, guid: c5a0eb0348d0db04789a2ac2aa60b1d2, type: 3}
-  keyToPress: 101
+  keyToPress: 106
   rhythmGameController: {fileID: 65447403}
 --- !u!1 &993248568
 GameObject:
@@ -15967,7 +15967,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &994980937
 GameObject:
   m_ObjectHideFlags: 0
@@ -16104,7 +16104,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1001692748
 GameObject:
   m_ObjectHideFlags: 0
@@ -16241,7 +16241,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1005695519
 GameObject:
   m_ObjectHideFlags: 0
@@ -16378,7 +16378,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1006051003
 GameObject:
   m_ObjectHideFlags: 0
@@ -16515,7 +16515,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1008153593
 GameObject:
   m_ObjectHideFlags: 0
@@ -16652,7 +16652,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1014721463
 GameObject:
   m_ObjectHideFlags: 0
@@ -16789,7 +16789,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1021914134
 GameObject:
   m_ObjectHideFlags: 0
@@ -16926,7 +16926,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1028987824
 GameObject:
   m_ObjectHideFlags: 0
@@ -17063,7 +17063,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1031432026
 GameObject:
   m_ObjectHideFlags: 0
@@ -17200,7 +17200,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1035297488
 GameObject:
   m_ObjectHideFlags: 0
@@ -17352,7 +17352,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1036416141
 GameObject:
   m_ObjectHideFlags: 0
@@ -17489,7 +17489,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1045983663
 GameObject:
   m_ObjectHideFlags: 0
@@ -17626,7 +17626,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1050679600
 GameObject:
   m_ObjectHideFlags: 0
@@ -17763,7 +17763,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1062735371
 GameObject:
   m_ObjectHideFlags: 0
@@ -17900,7 +17900,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1069497368
 GameObject:
   m_ObjectHideFlags: 0
@@ -18037,7 +18037,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1070306214
 GameObject:
   m_ObjectHideFlags: 0
@@ -18174,7 +18174,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1072043723
 GameObject:
   m_ObjectHideFlags: 0
@@ -18357,7 +18357,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1090489658
 GameObject:
   m_ObjectHideFlags: 0
@@ -18494,7 +18494,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1095453352
 GameObject:
   m_ObjectHideFlags: 0
@@ -18631,7 +18631,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1097140297
 GameObject:
   m_ObjectHideFlags: 0
@@ -18768,7 +18768,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1099424886
 GameObject:
   m_ObjectHideFlags: 0
@@ -18905,7 +18905,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1107875237
 GameObject:
   m_ObjectHideFlags: 0
@@ -19042,7 +19042,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1114974128
 GameObject:
   m_ObjectHideFlags: 0
@@ -19179,7 +19179,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1118794458
 GameObject:
   m_ObjectHideFlags: 0
@@ -19316,7 +19316,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1120683721
 GameObject:
   m_ObjectHideFlags: 0
@@ -19453,7 +19453,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1136346786
 GameObject:
   m_ObjectHideFlags: 0
@@ -19590,7 +19590,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1146848631
 GameObject:
   m_ObjectHideFlags: 0
@@ -19727,7 +19727,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1156800972
 GameObject:
   m_ObjectHideFlags: 0
@@ -19864,7 +19864,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1156865390
 GameObject:
   m_ObjectHideFlags: 0
@@ -20001,7 +20001,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1169123895
 GameObject:
   m_ObjectHideFlags: 0
@@ -20138,7 +20138,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1169757731
 GameObject:
   m_ObjectHideFlags: 0
@@ -20275,7 +20275,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1179868371
 GameObject:
   m_ObjectHideFlags: 0
@@ -20412,7 +20412,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1190519154
 GameObject:
   m_ObjectHideFlags: 0
@@ -20549,7 +20549,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1201053304
 GameObject:
   m_ObjectHideFlags: 0
@@ -20686,7 +20686,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1201617985
 GameObject:
   m_ObjectHideFlags: 0
@@ -20823,7 +20823,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1204747296
 GameObject:
   m_ObjectHideFlags: 0
@@ -20960,7 +20960,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1206558120
 GameObject:
   m_ObjectHideFlags: 0
@@ -21097,7 +21097,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1214180797
 GameObject:
   m_ObjectHideFlags: 0
@@ -21234,7 +21234,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1214396850
 GameObject:
   m_ObjectHideFlags: 0
@@ -21371,7 +21371,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1219096206
 GameObject:
   m_ObjectHideFlags: 0
@@ -21508,7 +21508,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1220561742
 GameObject:
   m_ObjectHideFlags: 0
@@ -21645,7 +21645,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1222101689
 GameObject:
   m_ObjectHideFlags: 0
@@ -21782,7 +21782,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1226469167
 GameObject:
   m_ObjectHideFlags: 0
@@ -21919,7 +21919,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1226765315
 GameObject:
   m_ObjectHideFlags: 0
@@ -22056,7 +22056,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1233375364
 GameObject:
   m_ObjectHideFlags: 0
@@ -22193,7 +22193,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &1243949758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22212,7 +22212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1292013330668485758, guid: 2e3eccedc3c27c04ea1e06604ddaa730, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5984954736224582385, guid: 2e3eccedc3c27c04ea1e06604ddaa730, type: 3}
       propertyPath: emptyObject1
@@ -22407,7 +22407,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1283199981
 GameObject:
   m_ObjectHideFlags: 0
@@ -22494,7 +22494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1290781470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22714,7 +22714,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1302835003
 GameObject:
   m_ObjectHideFlags: 0
@@ -22851,7 +22851,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1310971090
 GameObject:
   m_ObjectHideFlags: 0
@@ -22988,7 +22988,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1314708052
 GameObject:
   m_ObjectHideFlags: 0
@@ -23125,7 +23125,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1321797459
 GameObject:
   m_ObjectHideFlags: 0
@@ -23262,7 +23262,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1323720821
 GameObject:
   m_ObjectHideFlags: 0
@@ -23399,7 +23399,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1325341362
 GameObject:
   m_ObjectHideFlags: 0
@@ -23536,7 +23536,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1330427927
 GameObject:
   m_ObjectHideFlags: 0
@@ -23673,7 +23673,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1341621661
 GameObject:
   m_ObjectHideFlags: 0
@@ -23810,7 +23810,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1352487693
 GameObject:
   m_ObjectHideFlags: 0
@@ -23947,7 +23947,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1358073913
 GameObject:
   m_ObjectHideFlags: 0
@@ -24084,7 +24084,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1362885244
 GameObject:
   m_ObjectHideFlags: 0
@@ -24221,7 +24221,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1384942578
 GameObject:
   m_ObjectHideFlags: 0
@@ -24358,7 +24358,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1393467637
 GameObject:
   m_ObjectHideFlags: 0
@@ -24495,7 +24495,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1394521368
 GameObject:
   m_ObjectHideFlags: 0
@@ -24632,7 +24632,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1399820661
 GameObject:
   m_ObjectHideFlags: 0
@@ -24769,7 +24769,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1405058547
 GameObject:
   m_ObjectHideFlags: 0
@@ -24906,7 +24906,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1406460696
 GameObject:
   m_ObjectHideFlags: 0
@@ -25043,7 +25043,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1412884501
 GameObject:
   m_ObjectHideFlags: 0
@@ -25180,7 +25180,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1416901931
 GameObject:
   m_ObjectHideFlags: 0
@@ -25317,7 +25317,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1448683656
 GameObject:
   m_ObjectHideFlags: 0
@@ -25454,7 +25454,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1450095110
 GameObject:
   m_ObjectHideFlags: 0
@@ -25591,7 +25591,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1465159596
 GameObject:
   m_ObjectHideFlags: 0
@@ -25728,7 +25728,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1467374073
 GameObject:
   m_ObjectHideFlags: 0
@@ -26002,7 +26002,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1472200279
 GameObject:
   m_ObjectHideFlags: 0
@@ -26139,7 +26139,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1487028496
 GameObject:
   m_ObjectHideFlags: 0
@@ -26276,7 +26276,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1491649687
 GameObject:
   m_ObjectHideFlags: 0
@@ -26413,7 +26413,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1493171737
 GameObject:
   m_ObjectHideFlags: 0
@@ -26550,7 +26550,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1495338400
 GameObject:
   m_ObjectHideFlags: 0
@@ -26687,7 +26687,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1495881249
 GameObject:
   m_ObjectHideFlags: 0
@@ -26824,7 +26824,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1506610727
 GameObject:
   m_ObjectHideFlags: 0
@@ -26961,7 +26961,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1511387184
 GameObject:
   m_ObjectHideFlags: 0
@@ -27098,7 +27098,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1524331953
 GameObject:
   m_ObjectHideFlags: 0
@@ -27235,7 +27235,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1536324090
 GameObject:
   m_ObjectHideFlags: 0
@@ -27372,7 +27372,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1540006711
 GameObject:
   m_ObjectHideFlags: 0
@@ -27509,7 +27509,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1549104674
 GameObject:
   m_ObjectHideFlags: 0
@@ -27646,7 +27646,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1567436958
 GameObject:
   m_ObjectHideFlags: 0
@@ -27783,7 +27783,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1572680042
 GameObject:
   m_ObjectHideFlags: 0
@@ -27920,7 +27920,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1585358675
 GameObject:
   m_ObjectHideFlags: 0
@@ -28296,7 +28296,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1606821842
 GameObject:
   m_ObjectHideFlags: 0
@@ -28433,7 +28433,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1608016405
 GameObject:
   m_ObjectHideFlags: 0
@@ -28570,7 +28570,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &1617657039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29015,7 +29015,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1641169172
 GameObject:
   m_ObjectHideFlags: 0
@@ -29152,7 +29152,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1648515104
 GameObject:
   m_ObjectHideFlags: 0
@@ -29289,7 +29289,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1655389508
 GameObject:
   m_ObjectHideFlags: 0
@@ -29426,7 +29426,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1663800468
 GameObject:
   m_ObjectHideFlags: 0
@@ -29563,7 +29563,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1667288957
 GameObject:
   m_ObjectHideFlags: 0
@@ -29700,7 +29700,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1674474417
 GameObject:
   m_ObjectHideFlags: 0
@@ -29837,7 +29837,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1718308788
 GameObject:
   m_ObjectHideFlags: 0
@@ -29974,7 +29974,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1719688555
 GameObject:
   m_ObjectHideFlags: 0
@@ -30111,7 +30111,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1720080673
 GameObject:
   m_ObjectHideFlags: 0
@@ -30248,7 +30248,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1726361124
 GameObject:
   m_ObjectHideFlags: 0
@@ -30385,7 +30385,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1728789676
 GameObject:
   m_ObjectHideFlags: 0
@@ -30522,7 +30522,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1740851518
 GameObject:
   m_ObjectHideFlags: 0
@@ -30659,7 +30659,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1746892172
 GameObject:
   m_ObjectHideFlags: 0
@@ -30796,7 +30796,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1749930201
 GameObject:
   m_ObjectHideFlags: 0
@@ -30933,7 +30933,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1756028674
 GameObject:
   m_ObjectHideFlags: 0
@@ -31070,7 +31070,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1763991568
 GameObject:
   m_ObjectHideFlags: 0
@@ -31207,7 +31207,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1786249565
 GameObject:
   m_ObjectHideFlags: 0
@@ -31344,7 +31344,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1789205535
 GameObject:
   m_ObjectHideFlags: 0
@@ -31481,7 +31481,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1791227474
 GameObject:
   m_ObjectHideFlags: 0
@@ -31618,7 +31618,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1804305396
 GameObject:
   m_ObjectHideFlags: 0
@@ -31755,7 +31755,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1807715410
 GameObject:
   m_ObjectHideFlags: 0
@@ -31892,7 +31892,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1001 &1808865808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32086,7 +32086,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1829564843
 GameObject:
   m_ObjectHideFlags: 0
@@ -32223,7 +32223,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1830815545
 GameObject:
   m_ObjectHideFlags: 0
@@ -32360,7 +32360,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1837700487
 GameObject:
   m_ObjectHideFlags: 0
@@ -32497,7 +32497,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1873255359
 GameObject:
   m_ObjectHideFlags: 0
@@ -32634,7 +32634,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1880414963
 GameObject:
   m_ObjectHideFlags: 0
@@ -32771,7 +32771,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1896728918
 GameObject:
   m_ObjectHideFlags: 0
@@ -32908,7 +32908,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1899735131
 GameObject:
   m_ObjectHideFlags: 0
@@ -33045,7 +33045,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1914312657
 GameObject:
   m_ObjectHideFlags: 0
@@ -33182,7 +33182,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1928408738
 GameObject:
   m_ObjectHideFlags: 0
@@ -33319,7 +33319,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1932777641
 GameObject:
   m_ObjectHideFlags: 0
@@ -33456,7 +33456,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1940164863
 GameObject:
   m_ObjectHideFlags: 0
@@ -33593,7 +33593,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1948060271
 GameObject:
   m_ObjectHideFlags: 0
@@ -33730,7 +33730,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1948210027
 GameObject:
   m_ObjectHideFlags: 0
@@ -33867,7 +33867,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1955195013
 GameObject:
   m_ObjectHideFlags: 0
@@ -34004,7 +34004,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1968092255
 GameObject:
   m_ObjectHideFlags: 0
@@ -34141,7 +34141,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1992069278
 GameObject:
   m_ObjectHideFlags: 0
@@ -34278,7 +34278,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &1994456258
 GameObject:
   m_ObjectHideFlags: 0
@@ -34463,7 +34463,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2022022576
 GameObject:
   m_ObjectHideFlags: 0
@@ -34684,7 +34684,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2030862536
 GameObject:
   m_ObjectHideFlags: 0
@@ -34821,7 +34821,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 5
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2042815194
 GameObject:
   m_ObjectHideFlags: 0
@@ -34958,7 +34958,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2048334383
 GameObject:
   m_ObjectHideFlags: 0
@@ -35095,7 +35095,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2051608777
 GameObject:
   m_ObjectHideFlags: 0
@@ -35232,7 +35232,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 0
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2075658551
 GameObject:
   m_ObjectHideFlags: 0
@@ -35444,7 +35444,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2081100675
 GameObject:
   m_ObjectHideFlags: 0
@@ -35581,7 +35581,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2083547594
 GameObject:
   m_ObjectHideFlags: 0
@@ -35718,7 +35718,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 6
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2084309616
 GameObject:
   m_ObjectHideFlags: 0
@@ -35855,7 +35855,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 107
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2099966644
 GameObject:
   m_ObjectHideFlags: 0
@@ -35992,7 +35992,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2102117355
 GameObject:
   m_ObjectHideFlags: 0
@@ -36129,7 +36129,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 1
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2109956489
 GameObject:
   m_ObjectHideFlags: 0
@@ -36266,7 +36266,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2112597955
 GameObject:
   m_ObjectHideFlags: 0
@@ -36403,7 +36403,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2127044381
 GameObject:
   m_ObjectHideFlags: 0
@@ -36540,7 +36540,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 2
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2128071570
 GameObject:
   m_ObjectHideFlags: 0
@@ -36677,7 +36677,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 106
   seccion: 3
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2133037518
 GameObject:
   m_ObjectHideFlags: 0
@@ -36814,7 +36814,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 100
   seccion: 4
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1 &2134679908
 GameObject:
   m_ObjectHideFlags: 0
@@ -36951,7 +36951,7 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 115
   seccion: 7
-  rhythmGameController: {fileID: 0}
+  rhythmGameController: {fileID: 65447403}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
