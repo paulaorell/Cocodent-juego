@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BrushController : MonoBehaviour
+public class BrushPositionController : MonoBehaviour
 {
     public Animator animator;  // El Animator del cepillo
     public Transform[] positions;  // Posiciones a las que se moverá
