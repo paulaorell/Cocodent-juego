@@ -1516,7 +1516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030720765647373781, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2480616908223638873, guid: f4aa65baf323bcb42ba344bb4f7659ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3543,7 +3543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &312456483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9242,7 +9242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930987345748956069, guid: d9ec6344348dd3d40a6d73e8af60b682, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5225370722516125904, guid: d9ec6344348dd3d40a6d73e8af60b682, type: 3}
       propertyPath: m_Layer
@@ -9262,7 +9262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8226399680890224111, guid: d9ec6344348dd3d40a6d73e8af60b682, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10644,7 +10644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1292013330668485758, guid: 2e3eccedc3c27c04ea1e06604ddaa730, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5984954736224582385, guid: 2e3eccedc3c27c04ea1e06604ddaa730, type: 3}
       propertyPath: emptyObject1
@@ -18122,7 +18122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3492481197293729565, guid: baa5539d7e1cf8342b96b14701eb5702, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6728212330887592286, guid: baa5539d7e1cf8342b96b14701eb5702, type: 3}
       propertyPath: animacionCanvas
@@ -23673,6 +23673,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 46771641893433018, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 46771641893433018, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
       propertyPath: m_SortingLayerID
       value: -1135631075
       objectReference: {fileID: 0}
@@ -23733,6 +23737,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1456109162453341145, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456109162453341145, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
       propertyPath: m_SortingLayerID
       value: -1135631075
       objectReference: {fileID: 0}
@@ -23789,6 +23797,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4806933486102708249, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806933486102708249, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
       propertyPath: m_SortingLayerID
       value: -1135631075
       objectReference: {fileID: 0}
@@ -23831,6 +23843,10 @@ PrefabInstance:
     - target: {fileID: 8011133575940606403, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011133575940606403, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8011133575940606403, guid: 68c42cdaf6b9e784d894b78409df9282, type: 3}
       propertyPath: m_SortingLayerID
